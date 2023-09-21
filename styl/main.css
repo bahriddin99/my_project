@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: #081b29; */
+    color: #ededed;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+   
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    justify-content: space-between;
+    display: flex;
+    z-index: 100;
+
+}
+.logo{
+    position: relative;
+    color: #ededed;
+    font-size: 25px;
+    font-weight: 600;
+}
+.logo::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29; 
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s; 
+}
+.navbar a{
+    color: #ededed;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .3s;
+ 
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+.navbar{
+    width: 50%;
+    justify-content: space-between;
+    
+    display: flex;
+}
+.home{
+    display: flex;
+   
+   
+    padding: 0 10%;
+    align-items: center;
+    height: 100vh;
+    
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700px;
+    line-height: 1.2;
+}
+.home-content h1::before{
+    content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: 1s;
+}
+.home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700px;
+    color: #00abf0;
+}
+.home-content h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+.home-content p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+.btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+.btn-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+.btn-box a{
+    position: relative;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    display: inline-flex;
+    font-size: 19px;
+    color: #081b29;
+    /* text-decoration: none; */
+    font-weight: 600;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+.btn-box a::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #081b29;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all .3s;
+    transition: all .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.home-sci{
+    position: relative;
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.2s;
+    z-index: 2;
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+   overflow: hidden;
+   transition: all .5s;
+}
+.home-sci a:hover{
+    color: #081b29;
+}
+.home-sci a::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: all .5s;
+}
+.home-sci a:hover::before{
+    width: 100%;
+}
+.home-imgHover{
+    top: 0;
+    /* position: relative; */
+    position: absolute;
+    right: 30px;
+    width: 550px;
+    height: 100%;
+    background: transparent;
+    /* border: 2px solid red; */
+    transition: all 2s;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+}
+.home-imgHover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 135%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 100;
+}
+.home-imgHover:hover{
+    background: #081b29;
+    opacity: .8;
+}
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+@keyframes ActiveHover{
+    100%{
+        pointer-events: auto;
+    }
+}
